@@ -1,12 +1,12 @@
-# FindCharge Today!
+# MusaByte
 
-**Our Mission:**
+**Mission**
 
-The core goal of FindCharge is to locate nearby electric charging stations for any given vehicle. 
+To bring an interactive experience for music listeners everywhere!
 
 **Ok, but why?**
 
-With the current trajectory of new electric vehicles coming to market rapidly growing, so will the charging stations. Besides Tesla owners, who have charging stations made for their cars, every EV(electric vehicle) owner knows the pain of spotting a charging station only to have the wrong connection. We aim to help EV owners, and Tesla owners, find their stations easily and not through trial and error.
+Social media platforms like Instgram and Twitter, while effective for promoting an artist like myself, are flooded with content that in my opinion gets stale. Not to mention, anything that I could post on any social media platform would need to meet those platforms formats. For example, I could never create and post a game where fans compete in a quiz about the artist and the winner is the only person able to listen to an unreleased track, again as an example. While I could post a link to a static website, this results in a likely one time visit and a new website for each fan interaction. That's just a poor business model and not DRY code, lol iykyk. Instead I imagine a place where an artist like myself can claim their own place on the internet creating new and fresh content for their fans in a familiar environment. 
 
 # Technologies
 
