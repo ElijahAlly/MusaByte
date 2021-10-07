@@ -28,63 +28,125 @@ li {
 }
 
 .navbar {
-  background-color: #353535;
+	background-color: #353535;
 
-  #artist-name {
-    font-family: 'Press Start 2P', cursive;
-    color: #d9d9d9;
-    cursor: pointer;
-  }
+	#artist-name {
+		font-family: 'Press Start 2P', cursive;
+		color: #d9d9d9;
+		cursor: pointer;
+	}
 
-  .navbar-links {
+	.navbar-links {
+		.nav-link {
+			font-family: 'Press Start 2P', cursive;
+			border-radius: 5px;
+			transition: 0.3s;
+			background-color: #3c6e71;
+			color: #d9d9d9;
 
-    .nav-link {
-      font-family: 'Press Start 2P', cursive;
-      border-radius: 5px;
-      transition: 0.3s;
-      background-color: #3c6e71;
-      color: #d9d9d9;
-
-      &:hover {
-        background-color: #284b63;
-      }
-    }
-  }
+			&:hover {
+				background-color: #284b63;
+			}
+		}
+	}
 }
 
-
 @media only screen and (min-width: 300px) and (max-width: 425px) {
-  .navbar {
-    background-color: red;
-    // position: fixed;
-    // top: 100px;
-    // left: 0;
-    // -webkit-backface-visibility: hidden;
-    // backface-visibility: hidden;
+	.navbar {
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 120px;
+		backface-visibility: hidden;
 
-    // #artist-name {
-    //   margin-top: 50px;
-    // }
-  
-    // .navbar-links {
-  
-    //   .nav-link {
-        
-  
-    //   }
-    // }
-  }
+		#artist-name {
+			font-size: 20px;
+			position: fixed;
+			top: 20px;
+			left: 20px;
+			width: fit-content;
+			padding: 0;
+		}
+
+		.navbar-links {
+			display: flex;
+			width: 100%;
+			align-items: center;
+			justify-content: space-evenly;
+			padding: 0;
+			font-size: 13px;
+			margin: 0;
+			position: fixed;
+			top: 80px;
+			
+			.nav-link {
+				padding: 6px;
+				background-color: transparent;
+				border-radius: 5px;
+				margin: 0;
+
+				&:hover {
+					background-color: transparent;
+				}
+
+				&:active {
+					background-color: transparent;
+				}
+			}
+
+			.highlight-link {
+				background-color: #284b63;
+			}
+		}
+	}
 }
 
 @media only screen and (min-width: 426px) and (max-width: 767px) {
+	.navbar {
+		background-color: red;
+		// position: fixed;
+		// top: 100px;
+		// left: 0;
+		// -webkit-backface-visibility: hidden;
+		// backface-visibility: hidden;
 
+		// #artist-name {
+		//   margin-top: 50px;
+		// }
+
+		// .navbar-links {
+
+		//   .nav-link {
+
+		//   }
+		// }
+	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.navbar {
+		background-color: red;
+		// position: fixed;
+		// top: 100px;
+		// left: 0;
+		// -webkit-backface-visibility: hidden;
+		// backface-visibility: hidden;
 
+		// #artist-name {
+		//   margin-top: 50px;
+		// }
+
+		// .navbar-links {
+
+		//   .nav-link {
+
+		//   }
+		// }
+	}
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1420) {
 	.navbar {
 		display: flex;
 		height: 90px;

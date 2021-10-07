@@ -11,7 +11,7 @@ const Songs = () => {
 
 	return (
 		<>
-			<Navbar />
+			<Navbar song={true}/>
 			<section className='song-page'>
                 <SongToolbar />
                 <section className='songs-board'>
