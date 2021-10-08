@@ -57,13 +57,13 @@ li {
 		position: fixed;
 		top: 0;
 		left: 0;
-		height: 120px;
+		height: 100px;
 		backface-visibility: hidden;
 
 		#artist-name {
 			font-size: 20px;
 			position: fixed;
-			top: 20px;
+			top: 10px;
 			left: 20px;
 			width: fit-content;
 			padding: 0;
@@ -78,7 +78,7 @@ li {
 			font-size: 13px;
 			margin: 0;
 			position: fixed;
-			top: 80px;
+			top: 62px;
 			
 			.nav-link {
 				padding: 6px;
