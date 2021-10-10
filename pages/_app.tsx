@@ -1,5 +1,6 @@
 // scss
 import '../styles/globals.scss'
+import '../styles/home.scss'
 import '../styles/songs.scss'
 
 import type { AppProps } from 'next/app'

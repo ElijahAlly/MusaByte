@@ -1,7 +1,7 @@
 import Navbar from '../components/navbar';
 import Head from 'next/head';
 
-const Contact = () => {
+const Shop = () => {
 	return (
 		<>
 			<Head>
@@ -9,11 +9,11 @@ const Contact = () => {
 				<link rel='icon' href='/mb_icon.png' />
 			</Head>
 			<section>
-				<Navbar contact={true} />
-				<h1>Contact page</h1>
+				<Navbar shop={true} />
+				<h1>Shop page</h1>
 			</section>
 		</>
 	);
 };
 
-export default Contact;
+export default Shop;

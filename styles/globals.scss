@@ -11,6 +11,14 @@ body,
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	::selection {
+		background: #6f9bb8a8; /* WebKit/Blink Browsers */
+		color: #464646;
+	}
+	::-moz-selection {
+		background: #6f9bb8a8; /* Gecko Browsers */
+		color: #464646;
+	}
 }
 
 a {
@@ -28,156 +36,80 @@ li {
 }
 
 .navbar {
+	display: flex;
+	height: 90px;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
 	background-color: #353535;
 
 	#artist-name {
 		font-family: 'Press Start 2P', cursive;
 		color: #d9d9d9;
 		cursor: pointer;
+		margin-left: 20px;
+		font-size: 35px;
 	}
 
 	.navbar-links {
+		margin: 0 70px 0 0;
+		padding: 0;
+		display: flex;
+		height: 100%;
+		width: 750px;
+		align-items: center;
+
 		.nav-link {
 			font-family: 'Press Start 2P', cursive;
 			border-radius: 5px;
 			transition: 0.3s;
-			background-color: #3c6e71;
+			background-color: transparent;
 			color: #d9d9d9;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 10px;
+			height: 50px;
+			width: 250px;
+			font-size: 18px;
 
 			&:hover {
 				background-color: #284b63;
 			}
 		}
-	}
-}
 
-@media only screen and (min-width: 300px) and (max-width: 425px) {
-	.navbar {
-		width: 100%;
-		position: fixed;
-		top: 0;
-		left: 0;
-		height: 100px;
-		backface-visibility: hidden;
+		.highlight-link {
+			color: #d9d9d9;
+			background-color: #3c6e71;
 
-		#artist-name {
-			font-size: 20px;
-			position: fixed;
-			top: 10px;
-			left: 20px;
-			width: fit-content;
-			padding: 0;
-		}
-
-		.navbar-links {
-			display: flex;
-			width: 100%;
-			align-items: center;
-			justify-content: space-evenly;
-			padding: 0;
-			font-size: 13px;
-			margin: 0;
-			position: fixed;
-			top: 62px;
-			
-			.nav-link {
-				padding: 6px;
-				background-color: transparent;
-				border-radius: 5px;
-				margin: 0;
-
-				&:hover {
-					background-color: transparent;
-				}
-
-				&:active {
-					background-color: transparent;
-				}
-			}
-
-			.highlight-link {
-				background-color: #284b63;
+			&:hover {
+				background-color: #3c6e71;
 			}
 		}
 	}
 }
 
-@media only screen and (min-width: 426px) and (max-width: 767px) {
-	.navbar {
-		background-color: red;
-		// position: fixed;
-		// top: 100px;
-		// left: 0;
-		// -webkit-backface-visibility: hidden;
-		// backface-visibility: hidden;
+.banner {
+	background-color: wheat;
+	width: 100%;
+	height: 65px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-		// #artist-name {
-		//   margin-top: 50px;
-		// }
+	.text {
+		font-family: 'Press Start 2P', cursive;
+		color: #353535;
+		font-size: 15px;
 
-		// .navbar-links {
+		a {
+			text-decoration: 2px solid underline;
 
-		//   .nav-link {
-
-		//   }
-		// }
-	}
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-	.navbar {
-		background-color: red;
-		// position: fixed;
-		// top: 100px;
-		// left: 0;
-		// -webkit-backface-visibility: hidden;
-		// backface-visibility: hidden;
-
-		// #artist-name {
-		//   margin-top: 50px;
-		// }
-
-		// .navbar-links {
-
-		//   .nav-link {
-
-		//   }
-		// }
-	}
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1420) {
-	.navbar {
-		display: flex;
-		height: 90px;
-		width: 100%;
-		justify-content: space-between;
-		align-items: center;
-		position: fixed;
-		top: 0;
-		left: 0;
-
-		#artist-name {
-			margin-left: 20px;
-			font-size: 35px;
-		}
-
-		.navbar-links {
-			margin: 0 70px 0 0;
-			padding: 0;
-			display: flex;
-			height: 100%;
-			width: 750px;
-			align-items: center;
-
-			.nav-link {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				margin: 0 10px;
-				height: 50px;
-				width: 250px;
-				font-size: 18px;
+			&:hover {
+				text-underline-offset: 2px;
 			}
 		}
 	}

@@ -2,12 +2,12 @@ import React from 'react';
 import Link from 'next/link';
 
 const Navbar = ({
-	song,
-	merch,
+	music,
+	shop,
 	contact,
 }: {
-	song?: Boolean;
-	merch?: Boolean;
+	music?: Boolean;
+	shop?: Boolean;
 	contact?: Boolean;
 }) => {
 	return (
@@ -16,11 +16,11 @@ const Navbar = ({
 				<h1 id='artist-name'>MusaByte</h1>
 			</Link>
 			<ul className='navbar-links'>
-				<Link href='/songs'>
-					<a className={`nav-link ${song ? 'highlight-link' : ''}`}>Songs</a>
+				<Link href='/music'>
+					<a className={`nav-link ${music ? 'highlight-link' : ''}`}>Music</a>
 				</Link>
-				<Link href='/merchandise'>
-					<a className={`nav-link ${merch ? 'highlight-link' : ''}`}>Merchandise</a>
+				<Link href='/shop'>
+					<a className={`nav-link ${shop ? 'highlight-link' : ''}`}>Shop</a>
 				</Link>
 				<Link href='/contact'>
 					<a className={`nav-link ${contact ? 'highlight-link' : ''}`}>Contact</a>
