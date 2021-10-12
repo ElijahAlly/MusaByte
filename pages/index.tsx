@@ -1,15 +1,12 @@
 import type { NextPage } from 'next';
 import Navbar from '../components/navbar';
-import Head from 'next/head';
 import Banner from '../components/banner';
+import PageHead from '../components/head';
 
 const Home: NextPage = () => {
 	return (
 		<>
-			<Head>
-				<title>MusaByte</title>
-				<link rel='icon' href='/mb_icon.png' />
-			</Head>
+			<PageHead />
 			<Navbar />
 			<section className='home-page'>
 				<Banner

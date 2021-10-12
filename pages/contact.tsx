@@ -1,13 +1,10 @@
 import Navbar from '../components/navbar';
-import Head from 'next/head';
+import PageHead from '../components/head';
 
 const Contact = () => {
 	return (
 		<>
-			<Head>
-				<title>MusaByte</title>
-				<link rel='icon' href='/mb_icon.png' />
-			</Head>
+			<PageHead/>
 			<section>
 				<Navbar contact={true} />
 				<h1>Contact page</h1>

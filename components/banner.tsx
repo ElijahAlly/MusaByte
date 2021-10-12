@@ -19,9 +19,13 @@ const Banner = ({
 				<section className='banner'>
 					<h2 className='text'>
 						{text}{' '}
-						<Link href={linkTo}>
-							<a>{linkText}</a>
-						</Link>
+						{linkTo.includes('http') ? (
+							<a target='_blank' href={linkTo}>{linkText}</a>
+						) : (
+							<Link href={linkTo}>
+								<a>{linkText}</a>
+							</Link>
+						)}
 						{addBang ? <>!</> : <>.</>}
 					</h2>
 				</section>

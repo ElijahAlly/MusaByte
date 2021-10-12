@@ -1,4 +1,4 @@
-interface CommentType {
+export interface CommentType {
 	username: string;
 	title: string;
 	body: string;

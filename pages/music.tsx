@@ -5,18 +5,15 @@ import Navbar from '../components/navbar';
 import SongToolbar from '../components/song_toolbar';
 import CurrentlyPlayingSong from '../components/currently_playing_song';
 import Comments from '../components/comments';
-import Head from 'next/head';
 import Banner from '../components/banner';
+import PageHead from '../components/head';
 
 const Music = () => {
 	const songs = getAllSongs();
 
 	return (
 		<>
-			<Head>
-				<title>MusaByte</title>
-				<link rel='icon' href='/mb_icon.png' />
-			</Head>
+			<PageHead/>
 			<Navbar music={true} />
 			<section className='music-page'>
 				<Banner
@@ -26,7 +23,7 @@ const Music = () => {
 					linkText={'MusaByte Shop'}
 					addBang={false}
 				/>
-				<SongToolbar />
+				{/* <SongToolbar /> */}
 				<section className='songs-board'>
 					{songs && (
 						<ul className='songs-list'>

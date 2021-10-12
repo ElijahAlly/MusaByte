@@ -8,7 +8,7 @@ interface SongBoardProps {
 }
 
 const SongBoard = ({ song }: SongBoardProps) => {
-	const { isPlaying, pauseAudio, playSong, togglePlay } = useSharedSongState();
+	const { pauseAudio, togglePlay } = useSharedSongState();
 
 	useEffect(() => {
 		return () => {
