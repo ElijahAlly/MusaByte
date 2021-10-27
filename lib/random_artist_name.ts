@@ -5,7 +5,7 @@ const getRandomArtistName = async () => {
 
     for (let i = 1; i < 5; i++) {
         data += await reader.getText(
-            `./9912f7a366c62c1f296c-dd94a25492b3062f4ca0dc2bb2cdf23fec0896ea/10000-MTV-Music-Artists-page-${i}.csv`
+            `./artists/10000-MTV-Music-Artists-page-${i}.csv`
         )
     }
 

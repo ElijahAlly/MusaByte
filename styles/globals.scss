@@ -56,13 +56,14 @@ li {
 	}
 
 	.navbar-links {
-		margin: 0 70px 0 0;
+		margin: 0;
 		padding: 0;
 		display: flex;
 		height: 100%;
 		width: 750px;
 		align-items: center;
-
+		justify-content: center;
+		
 		.nav-link {
 			font-family: 'Press Start 2P', cursive;
 			border-radius: 5px;

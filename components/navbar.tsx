@@ -19,9 +19,9 @@ const Navbar = ({
 				<Link href='/music'>
 					<a className={`nav-link ${music ? 'highlight-link' : ''}`}>Music</a>
 				</Link>
-				<Link href='/shop'>
+				{/* <Link href='/shop'>
 					<a className={`nav-link ${shop ? 'highlight-link' : ''}`}>Shop</a>
-				</Link>
+				</Link> */}
 				<Link href='/contact'>
 					<a className={`nav-link ${contact ? 'highlight-link' : ''}`}>Contact</a>
 				</Link>

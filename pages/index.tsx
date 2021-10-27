@@ -11,7 +11,7 @@ const Home: NextPage = () => {
 			<section className='home-page'>
 				<Banner
 					showBanner={true}
-					text={"It's finally out! Check out MusaByte's"}
+					text={"Check out MusaByte's"}
 					linkTo={'/music'}
 					linkText={'New Music'}
 					addBang={true}
