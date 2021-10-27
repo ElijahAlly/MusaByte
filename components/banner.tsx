@@ -20,7 +20,7 @@ const Banner = ({
 					<h2 className='text'>
 						{text}{' '}
 						{linkTo.includes('http') ? (
-							<a target='_blank' href={linkTo}>{linkText}</a>
+							<a target='_blank' rel="noreferrer" href={linkTo}>{linkText}</a>
 						) : (
 							<Link href={linkTo}>
 								<a>{linkText}</a>

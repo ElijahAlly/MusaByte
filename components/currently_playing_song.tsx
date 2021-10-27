@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSharedSongState } from './shared_state';
+import Image from 'next/image'
 
 const CurrentlyPlayingSong = () => {
 	const { song, isPlaying, playSong, pauseAudio, togglePlay } = useSharedSongState();
@@ -9,14 +10,14 @@ const CurrentlyPlayingSong = () => {
 			{song ? (
 				<>
 					<div className='cover-container'>
-						<img src={song.cover} className='cover' alt='song cover art' />
+						<Image src={song.cover} className='cover' alt='song cover art' />
 					</div>
 					<h1 className='title'>{song.title}</h1>
 				</>
 			) : (
 				<>
 					<div className='cover-container'>
-						<img
+						<Image
 							src='https://musabyte-audio-files.s3.amazonaws.com/no_album_art__no_cover.jpg'
 							className='cover'
 							alt='song cover art placeholder'

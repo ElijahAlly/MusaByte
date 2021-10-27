@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'
 import getRandomArtistName from '../lib/random_artist_name';
 
 const Comments = () => {
@@ -12,7 +13,7 @@ const Comments = () => {
 			   <button>Post Comment</button>
 		   </form> */}
 			<div className='new-comment'>
-				<img src="https://picsum.photos/200/300/?blur=2" className='profile-picture'/>
+				<Image src="https://picsum.photos/200/300/?blur=2" className='profile-picture' alt=''/>
 				<h2 className='profile-username'></h2>
 		   	</div>
 		</section>

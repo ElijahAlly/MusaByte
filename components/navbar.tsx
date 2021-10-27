@@ -12,7 +12,7 @@ const Navbar = ({
 }) => {
 	return (
 		<section className='navbar'>
-			<Link href='/'>
+			<Link href='/' passHref>
 				<h1 id='artist-name'>MusaByte</h1>
 			</Link>
 			<ul className='navbar-links'>
