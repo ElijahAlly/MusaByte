@@ -43,7 +43,7 @@ const SongBoard = () => {
 				className='youtube-player'
 				width='640'
 				height='385'
-				src={`http://www.youtube.com/embed/${currentVideo[0]}`}></iframe>
+				src={`https://www.youtube.com/embed/${currentVideo[0]}`}></iframe>
 		</section>
 	);
 };
