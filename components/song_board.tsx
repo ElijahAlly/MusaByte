@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 const SongBoard = () => {
 	const videoIds = [
-		['st1hqm3kg6Y', 'Taking Off'],
+		['Y9VrmPIC4yA', 'Taking Off'],
 		['Pm7E-dH8eAA', 'Shedding Emotions'],
 		['WbzEoFr-yy0', 'Future Bass'],
 		['ziYcEuvSIKc', 'Swedish House'],
@@ -13,6 +13,8 @@ const SongBoard = () => {
 		['pTnj1cSZO6I', 'Tron Wave'],
 		['ROyMgzE-urE', 'Pads & Strings'],
 	];
+
+	const [videoWidthAndHeight, setVideoWidthAndHeight] = useState(['640', '385']);
 	const [currentVideo, setCurrentVideo] = useState(videoIds[0]);
 	console.log(currentVideo)
 
@@ -28,8 +30,15 @@ const SongBoard = () => {
 
 	useEffect(() => {
 		changeCurrentVideo(currentVideo);
+		window.addEventListener('resize', () => {
+			if (window.innerWidth < 441) {
+				setVideoWidthAndHeight(['350', '210.525'])
+			} else {
+				setVideoWidthAndHeight(['640', '385'])
+			}
+		});
 	}, [])
-
+	
 	return (
 		<section className='songs-board'>
 			<div className='video-list'>
@@ -41,8 +50,8 @@ const SongBoard = () => {
 			</div>
 			<iframe
 				className='youtube-player'
-				width='640'
-				height='385'
+				width={videoWidthAndHeight[0]}
+				height={videoWidthAndHeight[1]}
 				src={`https://www.youtube.com/embed/${currentVideo[0]}`}></iframe>
 		</section>
 	);

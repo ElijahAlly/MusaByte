@@ -1,4 +1,106 @@
-.home-page {
-    margin-top: 90px;
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 
+.home-page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 90px;
+    height: 100%;
+
+    .under-development {
+        margin-top: 2em;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .welcome-message {
+            font-size: 30px;
+            width: 70%;
+            color: black;
+
+            .music-link {
+                color: brown;
+
+                &:hover {
+                    color: rgba(161, 39, 39, 0.884);
+                }
+            }
+        }
+    }
+
+    .socials-banner {
+        width: 90%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5em;
+        background-color: #353535;
+        border-radius: 10px;
+
+        .social {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border-radius: 100px;
+            width: 150px;
+            height: 150px;
+            padding: 5px;
+            transition: 0.3s;
+            margin: 0 20px;
+            background-color: #bbbaba;
+
+            .name {
+                margin-top: 10px;
+                font-size: 14px;
+                font-family: 'Press Start 2P', cursive;
+            }
+            
+            // .icon {
+            // }
+                
+            &:hover {
+                box-shadow: 0px 2px 2px 1px brown;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 440px) { 
+    .home-page {
+    
+        .under-development {
+            margin-top: 7em;
+    
+            .welcome-message {
+                font-size: 16px;
+                background-color: #353535;
+                color: #bbbaba;
+                padding: 2em;
+                border-radius: 10px;
+            }
+        }
+    
+        .socials-banner {
+            height: 40px;
+            margin-top: 8em;
+    
+            .social {
+                width: 65px;
+                height: 65px;
+                padding: 10px;
+                margin: 0 12px;
+    
+                .name {
+                    display: none;
+                }
+            }
+        }
+    }
 }

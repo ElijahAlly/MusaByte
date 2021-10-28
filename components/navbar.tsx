@@ -22,9 +22,9 @@ const Navbar = ({
 				{/* <Link href='/shop'>
 					<a className={`nav-link ${shop ? 'highlight-link' : ''}`}>Shop</a>
 				</Link> */}
-				<Link href='/contact'>
+				{/* <Link href='/contact'>
 					<a className={`nav-link ${contact ? 'highlight-link' : ''}`}>Contact</a>
-				</Link>
+				</Link> */}
 			</ul>
 		</section>
 	);
