@@ -30,6 +30,10 @@ const SongBoard = () => {
 
 	useEffect(() => {
 		changeCurrentVideo(currentVideo);
+		if (window.innerWidth < 500) {
+			setVideoWidthAndHeight(['350', '210.525'])
+		}
+		
 		window.addEventListener('resize', () => {
 			if (window.innerWidth < 500) {
 				setVideoWidthAndHeight(['350', '210.525'])
