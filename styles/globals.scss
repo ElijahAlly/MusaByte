@@ -111,10 +111,18 @@ li {
 		font-size: 15px;
 
 		a {
-			text-decoration: 2px solid underline;
+			text-decoration-line: underline !important;
+			text-decoration-color: #353535 !important;
+			text-decoration-style: solid !important;
+			text-decoration-thickness: 2px !important;
+			-webkit-text-decoration-line:  underline !important;
+			-webkit-text-decoration-color: #353535 !important;
+			-webkit-text-decoration-style: solid !important;
+			-webkit-text-decoration-thickness: 2px !important;
 
 			&:hover {
-				text-underline-offset: 2px;
+				text-underline-offset: 2px !important;
+				-webkit-text-underline-offset: 2px !important;
 			}
 		}
 	}
