@@ -5,6 +5,7 @@ const SongBoard = () => {
 		['Y9VrmPIC4yA', 'Taking Off'],
 		['Pm7E-dH8eAA', 'Shedding Emotions'],
 		['xwKfXNY8PLU', 'Future Bass'],
+		['F75sRAK-ZbQ', 'Olld Schooll'],
 		['ziYcEuvSIKc', 'Swedish House'],
 		['i_Xpz_cR6M0', 'Stutter'],
 		['aFv5J-iOzJ0', 'Electric'],
